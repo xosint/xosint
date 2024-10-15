@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Расширенный поиск в Google</title>
+</head>
+<body>
+    <body>
+        <h1 style="margin-left:10px">Расширенный поиск</h1>
+    
+        <form action="https://www.google.com/search" id="s1zaZb" method="GET" target="_blank" name="f">
+            <!-- Найти страницы -->
+            <span>Найти страницы</span>
+    
+            <!-- Со словами -->
+            <label for="xX4UFf">со словами:</label>
+            <input class="jfk-textinput" value="" autofocus="autofocus" id="xX4UFf" name="as_q" type="text">
+            <span>Введите ключевые слова: Иван Федорович Крузенштерн</span>
+    
+            <!-- Со словосочетанием -->
+            <label for="CwYCWc">со словосочетанием:</label>
+            <input class="jfk-textinput" value="" id="CwYCWc" name="as_epq" type="text">
+            <span>Заключите словосочетание в кавычки: "книга Иван Крузенштерн"</span>
+    
+            <!-- С любым из этих слов -->
+            <label for="mSoczb">с любым из этих слов:</label>
+            <input class="jfk-textinput" value="" id="mSoczb" name="as_oq" type="text">
+            <span>Вставьте оператор OR между словами: человек OR пароход</span>
+    
+            <!-- Без слов -->
+            <label for="t2dX1c">без слов:</label>
+            <input class="jfk-textinput" value="" id="t2dX1c" name="as_eq" type="text">
+            <span>Поставьте знак минуса перед словами: -пароход, -"книга о пароходе"</span>
+    
+            <!-- С диапазоном чисел -->
+            <label for="LK5akc">с диапазоном чисел:</label>
+            <input class="jfk-textinput" id="LK5akc" name="as_nlo" type="text"> –
+            <input class="jfk-textinput" name="as_nhi" type="text">
+            <span>Вставьте две точки между числами и укажите единицу измерения: 300..1000 рублей, 1812..1846</span>
+    
+            <!-- Дополнительные настройки -->
+            <span>Дополнительные настройки</span>
+    
+            <!-- Искать на -->
+            <label for="lr_input">Искать на:</label>
+            <input id="lr_input" name="lr" value="" type="hidden">
+            <select id="lr_button" name="lr">
+                <option value="any">любом языке</option>
+            </select>
+            <span>Поиск страниц на выбранном языке.</span>
+    
+            <!-- Страна -->
+            <label for="cr_input">Страна:</label>
+            <input id="cr_input" name="cr" value="" type="hidden">
+            <select id="cr_button" name="cr">
+                <option value="any">любая</option>
+            </select>
+            <span>Поиск страниц, созданных в определенной стране.</span>
+    
+            <!-- Дата обновления -->
+            <label for="as_qdr_input">Дата обновления:</label>
+            <input id="as_qdr_input" name="as_qdr" value="all" type="hidden">
+            <select id="as_qdr_button" name="as_qdr">
+                <option value="any">любая</option>
+            </select>
+            <span>Поиск страниц, которые были созданы или обновлены в течение указанного времени.</span>
+    
+            <!-- Сайт или домен -->
+            <label for="NqEkZd">Сайт или домен:</label>
+            <input class="jfk-textinput" value="" id="NqEkZd" name="as_sitesearch" type="text">
+            <span>Поиск на определенном сайте (например, wikipedia.org) или в домене (например, .edu, .org или .gov).</span>
+    
+            <!-- Расположение слов -->
+            <label for="as_occt_input">Расположение слов:</label>
+            <input value="any" id="as_occt_input" name="as_occt" type="hidden">
+            <select id="as_occt_button" name="as_occt">
+                <option value="any">где угодно на странице</option>
+            </select>
+            <span>Поиск по тексту, заголовку или адресу страниц, а также по ссылкам на них.</span>
+    
+            <!-- Формат файлов -->
+            <label for="as_filetype_input">Формат файлов:</label>
+            <input value="" id="as_filetype_input" name="as_filetype" type="hidden">
+            <select id="as_filetype_button" name="as_filetype">
+                <option value=""></option>
+                <option value="any">любой</option>
+            </select>
+            <span>Поиск страниц и файлов определенного формата.</span>
+    
+            <!-- Права на использование -->
+            <a href="https://support.google.com/websearch?p=ws_images_usagerights&amp;hl=ru">Права на использование</a>:
+            <input value="" id="as_rights_input" data-name="sur" data-tbs="true" type="hidden">
+            <select id="as_rights_button" name="as_rights">
+                <option value="any">с любой лицензией</option>
+            </select>
+            <span>Поиск страниц, которые можно бесплатно использовать, распространять и изменять.</span>
+    
+            <!-- Кнопка поиска -->
+            <br>
+            <br>
+            <input class="jfk-button jfk-button-action" value="Найти" type="submit">
+    
+        </form>
+        <br>
+        <br>
+        <!-- Дополнительные ссылки -->
+        <span>Кроме того, можно...</span>
+        <a href="https://support.google.com/websearch?p=adv_pages_similar&amp;hl=ru">Найти страницы, похожие на указанную</a>
+        <a href="https://support.google.com/websearch?p=adv_pages_visited&amp;hl=ru">Поискать информацию в истории поиска</a>
+        <a href="https://support.google.com/websearch?p=adv_operators&amp;hl=ru">Применить поисковые операторы</a>
+        <a href="/preferences?hl=ru-UA">Изменить настройки поиска</a>
+    </body>
+</html>
