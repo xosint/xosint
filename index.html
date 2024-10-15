@@ -8,12 +8,33 @@
 </head>
 <body>
     <body>
-        <a href="advanced_google.html">Расширенный поиск</a>
-    
-        <span>Кроме того, можно...</span>
-        <a href="https://support.google.com/websearch?p=adv_pages_similar&amp;hl=ru">Найти страницы, похожие на указанную</a>
-        <a href="https://support.google.com/websearch?p=adv_pages_visited&amp;hl=ru">Поискать информацию в истории поиска</a>
-        <a href="https://support.google.com/websearch?p=adv_operators&amp;hl=ru">Применить поисковые операторы</a>
+        <a href="advanced_google.html">Расширенный поиск Google</a><br>
+        <br>
+        <span>Кроме того, можно...</span><br>
+        <a href="https://support.google.com/websearch?p=adv_pages_similar&amp;hl=ru">Найти страницы, похожие на указанную</a><br>
+        <a href="https://support.google.com/websearch?p=adv_pages_visited&amp;hl=ru">Поискать информацию в истории поиска</a><br>
+        <a href="https://support.google.com/websearch?p=adv_operators&amp;hl=ru">Применить поисковые операторы</a><br>
         <a href="/preferences?hl=ru-UA">Изменить настройки поиска</a>
+
     </body>
+    <script>
+        // Проверка, авторизован ли пользователь
+        if (sessionStorage.getItem('loggedIn') !== 'true') {
+            // Если нет, перенаправить на страницу входа
+            window.location.href = 'login.html';
+        } else {
+            // Отобразить имя пользователя
+            document.getElementById('user').textContent = sessionStorage.getItem('username');
+        }
+
+        // Обработчик кнопки выхода
+        document.getElementById('logoutButton').addEventListener('click', function() {
+            // Очистка sessionStorage
+            sessionStorage.removeItem('loggedIn');
+            sessionStorage.removeItem('username');
+
+            // Перенаправление на страницу входа
+            window.location.href = 'login.html';
+        });
+    </script>
 </html>

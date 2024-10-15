@@ -438,4 +438,24 @@
     
         </form>
     </body>
+    <script>
+        // Проверка, авторизован ли пользователь
+        if (sessionStorage.getItem('loggedIn') !== 'true') {
+            // Если нет, перенаправить на страницу входа
+            window.location.href = 'login.html';
+        } else {
+            // Отобразить имя пользователя
+            document.getElementById('user').textContent = sessionStorage.getItem('username');
+        }
+
+        // Обработчик кнопки выхода
+        document.getElementById('logoutButton').addEventListener('click', function() {
+            // Очистка sessionStorage
+            sessionStorage.removeItem('loggedIn');
+            sessionStorage.removeItem('username');
+
+            // Перенаправление на страницу входа
+            window.location.href = 'login.html';
+        });
+    </script>
 </html>
